@@ -1,6 +1,6 @@
 <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-left">
+          <div class="col-md-6 {{activeClass}}">
                 <div class="nav">
                         <div class="nav-header">
                         </div>
@@ -46,10 +46,13 @@
                                         
                                       </label> -->
 
-                                      <div class="item-put">
+                                      <!-- <div class="item-put">
                                             <span id="item-cart" class="glyphicon glyphicon-shopping-cart"></span>  
                                       </div>
-                         
+                          -->
+                          <button (click)="addItemToCart()" class="btn btn-md btn-info">Add</button>
+                          <button (click)="nextClassIndex()" class="btn btn-md btn-info">Next</button>
+                          <button (click)="prevClassIndex()" class="btn btn-md btn-info">Prev</button>
                           
 
                       </div>
@@ -69,9 +72,15 @@
                               
                                 <a routerLink="help" class="nav-link">Help</a>
                         </li>
-                        &emsp;
+                       
                             <li class="nav-item">
                                     <a routerLink="account" class="nav-link">My account</a>
+                            </li>
+
+                            <li class="nav-item">
+                                    <div class="item-put">
+                                        <p class="item-num">{{price}}</p>
+                                    </div>
                             </li>
                          
                         </ul>
