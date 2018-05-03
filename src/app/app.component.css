@@ -1,49 +1,209 @@
-  #canvas {
-    border: 2px dashed #cccccc;
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color:transparent;
+  position: relative;
+  font-family: cursive;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 22px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(20, 190, 202, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-  .main-title{
-    margin-top: 10px;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-  .images-item {
-    width: 48%;
-    cursor: pointer;
-    -webkit-transition: .5s ease;
-    -webkit-transition: .5s ease;
-    padding: 3px;
-    max-width: 120px;
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(20, 190, 202, 0.3);
   }
-  
-  .images-item:hover {
-    opacity: 0.7;
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
   }
-  
-  .images-item-upload {
-    width: 80%;
-    cursor: pointer;
-    padding-bottom: 10px;
-    -webkit-transition: .5s ease;
-    -webkit-transition: .5s ease;
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
   }
-  
-  .images-item-upload:hover {
-    opacity: 0.7;
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
   }
-  
-  .custom-item {
-    border-bottom: 2px solid #f3f3f3;
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
   }
-  
-  .custom-item .custom-item-title {
-    color: #666666;
-    font-weight: 600;
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
-  
-  .custom-item .custom-item-body {
-    padding: 10px 0;
-  }
-  
-  .max-height{
-    overflow: auto;
-    max-height: 300px;
-  }
-  
+}
+
+.col-md-6.col-left{
+  background-color: #4aa5ae;
+  height: 870px;
+}
+
+.col-md-6.col-right{
+  background-color: #f1f6f9;
+  height: 870px;
+}
+
+.container.col-content{
+  background-color: transparent;
+  height: 600px;
+  margin-top: -50%;
+  position: relative;
+  z-index: 100;
+}
+
+.data-center{
+  margin-top: 20%;
+  margin-left: 34%;
+}
+
+.col-md-5.col-modal {
+  background-color: transparent;
+  height: 200px;
+  margin-left: 20%;
+  margin-top: 30%;
+  max-width: 50%;
+  position: relative;
+  z-index: 200;
+}
+
+.lorem{
+  color: white;
+}
+.price{
+  color:aqua;
+}
+
+.btn.btn-md{
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+h1{
+  font-family: sans-serif;
+}
+
+.img-apron{
+  z-index: 100;
+  margin-left: -71px;
+  margin-top: -63px;
+}
+
+.item-footer{
+  margin-top: 100%;
+  margin-left: 72px;
+  color: white;
+  font-size: 11px;
+}
+
+#nav-right{
+  background-color: transparent;
+  width: 82%;
+  margin-top: 14px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #565252ab;
+  font-size: 12px;
+}
+.nav-item{
+  padding-right: 60px;
+  font-family: monospace;
+}
+
+.right.carousel-control {
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(241, 246, 249) 100%);
+}
+
+.glyphicon.glyphicon-chevron-left{
+  margin-top: -46px;
+  margin-left: -18px;
+}
+
+.item-brand{
+  float: right;
+  color: white;
+}
+
+.item-sub{
+  font-family: cursive;
+  font-size: 12px;
+  margin-left: 70px;
+  color: aqua;
+}
+
+.item-select {
+    width: 38px;
+    border-radius: 29px;
+    background-color: white;
+}
+.item-put{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid aqua;
+  background-color: transparent;
+}
+
+#item-cart{
+  font-size: 41px;
+  margin-top: 6px;
+  margin-left: 8px;
+  color: teal
+}
