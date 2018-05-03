@@ -26,7 +26,7 @@
                       <div class="col-md-5 col-modal">
                           <h1 class="lorem"> LOREM IPSUM MODAL SUM GOES HERE AS CONTENY</h1>
                           <br>
-                          <h3 class="price"> {{"35"| currency}}</h3>
+                          <h3 class="price"> {{itemPrice| currency}}</h3>
                           <br>
                           <h5>COLORS</h5>
                         
@@ -37,6 +37,7 @@
                                   <a class="dropdown-item" href="#">3</a>
                                   <a class="dropdown-item" href="#">4</a>
                                   <a class="dropdown-item" href="#">5</a>
+                                  <a class="dropdown-item" href="#">5</a>
                                 </div>
                                       
                                       
@@ -45,18 +46,17 @@
                                         <span class="slider round"></span>
                                         
                                       </label> -->
-
+                                        
                                       <!-- <div class="item-put">
                                             <span id="item-cart" class="glyphicon glyphicon-shopping-cart"></span>  
                                       </div>
                           -->
-                          <button (click)="addItemToCart()" class="btn btn-md btn-info">Add</button>
+                          <button (click)="addItemToCart()" class="btn btn-md btn-info">Add to Cart</button>
                           <button (click)="nextClassIndex()" class="btn btn-md btn-info">Next</button>
                           <button (click)="prevClassIndex()" class="btn btn-md btn-info">Prev</button>
                           
 
                       </div>
-
                       <footer class="item-footer"><p ><small>Charmaine &copy; 2018 Copyright All Rights Reserved</small></p></footer>
           </div>
           <div class="col-md-6 col-right">
@@ -78,7 +78,7 @@
                             </li>
 
                             <li class="nav-item">
-                                    <div class="item-put">
+                                    <div class="item-put btn" (click)="handleCheckout()">
                                         <p class="item-num">{{price}}</p>
                                     </div>
                             </li>
@@ -101,7 +101,7 @@
         <div class="container col-content">
             <div class="row">
                     <h2 class="data-center"></h2>
-                    <img class="img-apron" src="assets/img/apron.png" alt="" width="513px" height="650px">
+                    <img class="img-apron" src="assets/img/apron.png" alt="" width="513px" height="780px">
             </div>
         </div>
       
