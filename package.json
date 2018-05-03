@@ -1,7 +1,7 @@
 {
-  "name": "angular-editor-fabric-js",
+  "name": "All things Charmaine",
   "version": "2.0.0",
-  "description": "Drag and drop editor based on Fabricjs (Angular Cli)",
+  "description": "Charmaine aprons App",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevoj/angular-editor-fabric-js"
+    "url": ""
   },
-  "author": "Leonardo Rico Guevara (https://github.com/kevoj)",
+  "author": "Delveri Chick",
   "keywords": [
     "kitchensink",
     "kitchensink-angular",
