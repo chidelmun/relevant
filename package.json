@@ -1,5 +1,5 @@
 {
-  "name": "All things Charmaine",
+  "name": "all-things-charmaine",
   "version": "2.0.0",
   "description": "Charmaine aprons App",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build"
   },
   "engines": {
     "node": "6.11.1",

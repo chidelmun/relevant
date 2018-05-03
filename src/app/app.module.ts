@@ -6,12 +6,11 @@ import { ColorPickerModule } from 'ngx-color-picker';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: AboutComponent
   },
   {
     path: 'about',
@@ -23,8 +22,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    HomeComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
