@@ -12,7 +12,7 @@ declare const fabric: any;
 export class AppComponent {
   price: number = 0;
   activeIndex = 0;
-  itemPrice = 8500;
+  itemPrice = 85;
   classes = ['col-left-green', 
               'col-left-orange',
               'col-left-yellow',
