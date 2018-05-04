@@ -41,7 +41,7 @@ export class AppComponent {
     handler.open({
       name: 'Charmaine Aprons Checkout',
       description: 'White Apron',
-      amount: this.itemPrice * this.price
+      amount: this.itemPrice * this.price * 100
     });
   }
 
